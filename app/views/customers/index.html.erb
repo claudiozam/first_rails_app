@@ -1,0 +1,16 @@
+<h1>Customers#index</h1>
+<p>Find me in app/views/customers/index.html.erb</p>
+<table>
+	<tr>
+		<td>Id</td>
+		<td>First name</td>
+		<td>Last name</td>
+	</tr>
+	<% @customers.each do |c| %>
+		<tr>
+			<td><%= c.id %></td>
+			<td><%= c.first_name %></td>
+			<td><%= c.last_name %></td>
+		</tr>
+	<% end %>
+</table>
